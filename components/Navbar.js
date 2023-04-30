@@ -30,9 +30,13 @@ export default function Navbar() {
       <div className={style.userImageContainer}></div>
       <Image src={avatar} width={40} height={40}/>
       </div>
+      {currentAccount ? (
       <div>
         {currentAccount.slice(0,6)}...{currentAccount.slice(51)}
       </div>
+      ) : (
+        <div>Please log in</div>
+      )} 
     </div>
   )
 }
