@@ -1,1 +1,5 @@
-import Navbar from '../components/Navbar'
+const Nabar = () => {
+    return <div>Navbar</div>
+}
+
+export default Navbar
