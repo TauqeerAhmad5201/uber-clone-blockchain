@@ -13,6 +13,7 @@ const style = {
     loginButton: `flex items-center cursor-pointer rounded-full hover:bg-[#333333] px-4 py-1`, 
     loginText: `ml-2`, 
 }
+const currentAccount = '0x8c34365806456r466j6563g4g656345425456665643645654f34'
 
 export default function Navbar() {
   return (
@@ -29,7 +30,9 @@ export default function Navbar() {
       <div className={style.userImageContainer}></div>
       <Image src={avatar} width={40} height={40}/>
       </div>
-      <div>0x00000....0000</div>
+      <div>
+        {currentAccount.slice(0,6)}...{currentAccount.slice(51)}
+      </div>
     </div>
   )
 }
