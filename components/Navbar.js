@@ -23,6 +23,7 @@ export default function Navbar() {
       <div className={style.userImageContainer}></div>
 <Image src={avatar} width={40} height={40}/>
       </div>
+      <div>0x00000....0000</div>
     </div>
   )
 }
