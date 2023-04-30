@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
 import avatar from '../temp/avatar.png'
+import { BsPerson } from 'react-icons/bs'
 
 const style = {
     wrapper : `h-16 w-full bg-black text-white flex md:justify-around items-center px-60 fixed gap-3`,
@@ -35,7 +36,10 @@ export default function Navbar() {
         {currentAccount.slice(0,6)}...{currentAccount.slice(51)}
       </div>
       ) : (
-        <div>Please log in</div>
+        <div className={style.loginButton}>
+            <BsPerson></BsPerson>
+            <span className={style.loginText}>Login</span>
+        </div>
       )} 
     </div>
   )
